@@ -12,7 +12,7 @@ import (
 	"github.com/ivandomanevsky/bank-app/token"
 	"github.com/ivandomanevsky/bank-app/util"
 	"github.com/stretchr/testify/require"
-	"io/io"
+	"io"
 	"net/http"
 	"net/http/httptest"
 	"testing"
