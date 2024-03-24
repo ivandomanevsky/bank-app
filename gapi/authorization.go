@@ -35,7 +35,7 @@ func (server *Server) authorizeUser(ctx context.Context, accessibleRoles []strin
 		return nil, fmt.Errorf("unsupported authorization type: %s", authType)
 	}
 
-	accessToken := values[1]
+	accessToken := fields[1]
 	payload, err := server.tokenMaker.VerifyToken(accessToken)
 	if err != nil {
 		return nil, fmt.Errorf("invalid access token: %s", err)
